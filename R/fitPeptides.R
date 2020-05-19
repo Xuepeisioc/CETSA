@@ -16,7 +16,7 @@ fitPeptides <-
     cluster_copy(cl, "fitPeptide")
     cluster_copy(cl, "vehicle")
     cluster_copy(cl, "treatment")
-    setDefaultCluster(cl = NULL)
+    setDefaultCluster()
     if (!dir.exists(file.path(resultPath, "plots")))
       dir.create(file.path(resultPath, "plots"), recursive = TRUE)
 

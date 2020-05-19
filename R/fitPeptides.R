@@ -4,7 +4,7 @@ fitPeptides <-
            plotCurves = FALSE,
            resultPath = '.', vehicle=c(), treatment=c()) {
     require(multidplyr)
-    cl <- new_cluster()
+    cl <- new_cluster(n = 2)
     cluster_library(cl, "CETSA")
     cluster_library(cl, "ggplot2")
     cluster_library(cl, "gridExtra")
